@@ -59,3 +59,8 @@ nav {
   border-radius: 8px;
   background: rgba(11, 2, 35, 0.1);
 }
+/* --------------------------------Banner styles--------------------- */
+.banner-container {
+  display: flex;
+  justify-content: space-around;
+}
