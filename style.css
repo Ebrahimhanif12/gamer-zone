@@ -37,7 +37,25 @@ nav {
 }
 .anchors-parent {
   display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: center;
 }
+.anchors-parent a {
+  text-decoration: none;
+  color: #3c354f;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .anchors-container2 {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 262px;
+  height: 56px;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
 }
