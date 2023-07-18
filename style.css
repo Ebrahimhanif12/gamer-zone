@@ -69,6 +69,12 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background: url("images/Group\ 14.png");
+  fill: linear-gradient(
+    223deg,
+    rgba(140, 87, 238, 0.03) 0%,
+    rgba(241, 68, 174, 0.03) 100%
+  );
 }
 .banner-title1 {
   color: #0b0223;
@@ -91,6 +97,32 @@ nav {
 }
 .banner-txt-container p {
   margin-bottom: 17px;
+}
+.btn-sign {
+  display: inline-flex;
+  border: none;
+  padding: 21px 40px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 48px;
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.btn-go {
+  display: inline-flex;
+  border: none;
+  padding: 21px 40px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 48px;
+  background: #4ec5f7;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .banner-img-container {
   height: 700px;
