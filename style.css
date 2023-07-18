@@ -63,4 +63,35 @@ nav {
 .banner-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+.banner-txt-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.banner-title1 {
+  color: #0b0223;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.banner-title2 {
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 95px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 24px;
+}
+.banner-txt-container p {
+  margin-bottom: 17px;
+}
+.banner-img-container {
+  height: 700px;
 }
