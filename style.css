@@ -8,13 +8,14 @@
   padding: 0;
 }
 /* --------------------------------------styles for nav---------------- */
-nav {
+/* nav {
   height: 130px;
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-}
+} */
 .nav-container {
   height: 130px;
+  /* width: 100%; */
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
   display: flex;
@@ -63,30 +64,29 @@ nav {
 .banner-container {
   display: flex;
   justify-content: space-around;
+  background: url("images/Group\ 14.png");
+  background-repeat: no-repeat;
   align-items: center;
+  gap: 68px;
 }
 .banner-txt-container {
   display: flex;
+  padding: 200px 200px;
+  width: 901px;
   align-items: center;
   flex-direction: column;
-  background: url("images/Group\ 14.png");
-  fill: linear-gradient(
-    223deg,
-    rgba(140, 87, 238, 0.03) 0%,
-    rgba(241, 68, 174, 0.03) 100%
-  );
 }
 .banner-title1 {
   color: #0b0223;
   text-align: center;
-  font-size: 48px;
+  font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
 }
 .banner-title2 {
   text-align: center;
   font-family: Work Sans;
-  font-size: 95px;
+  font-size: 70px;
   font-weight: 800;
   text-transform: uppercase;
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
@@ -101,29 +101,209 @@ nav {
 .btn-sign {
   display: inline-flex;
   border: none;
-  padding: 21px 40px;
+  padding: 15px 30px;
   align-items: flex-start;
   gap: 10px;
   border-radius: 48px;
   background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
 }
 .btn-go {
   display: inline-flex;
   border: none;
-  padding: 21px 40px;
+  padding: 15px 30px;
   align-items: flex-start;
   gap: 10px;
   border-radius: 48px;
   background: #4ec5f7;
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.banner-img-container img {
+  height: 700px;
+  width: 100%;
+  margin-right: auto;
+}
+
+/* --------------------------know more ----------------- */
+.know-more-container {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: right;
+  justify-content: space-around;
+  align-items: center;
+}
+.know-more-img img {
+  /* background: url("images/pngwing\ 4.png");
+  background-repeat: no-repeat; */
+  width: 600px;
+  height: 489px;
+}
+.know-more-txt-container {
+  align-items: center;
+}
+.we-are-gamer {
+  font-size: 48px;
+  text-align: right;
+  font-weight: 700;
+  margin-bottom: 24px;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.know-more-des,
+.purpose {
+  width: 520px;
+  text-align: right;
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.know-more-btn {
+  padding: 20px 40px;
+  border: none;
+  margin-left: 340px;
+  gap: 10px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-radius: 48px;
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  color: #fff;
+  font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
 }
-.banner-img-container {
-  height: 700px;
+.unless {
+  color: #534c64;
+  font-family: Work Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+}
+/* -----------------------Responsive for small----------------- */
+/* ---------------nav--------------- */
+@media screen and (max-width: 576px) {
+  .nav-container {
+    flex-direction: column;
+    height: 250px;
+    box-shadow: none;
+    margin: 103px 0px 75px 0px;
+    gap: 40px;
+  }
+  .anchors-parent {
+    flex-direction: column;
+  }
+  .name-logo-container {
+    gap: 10px;
+  }
+  .logo {
+    width: 42px;
+    height: 40px;
+  }
+  .name-logo-container h3 {
+    font-size: 1.5rem;
+  }
+  .anchors-parent {
+    gap: 16px;
+  }
+  .anchors-parent a {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .anchors-container2 {
+    gap: 12px;
+    width: 200px;
+  }
+  /* ---------------------banner--------------- */
+  .banner-container {
+    flex-direction: column;
+    margin-top: 20px;
+    flex-direction: column-reverse;
+  }
+  .banner-img-container {
+    padding: 20px;
+  }
+  .banner-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-img-container img {
+    width: 300px;
+    height: 446px;
+    margin: auto;
+  }
+  .banner-txt-container {
+    padding: 100px 100px;
+    width: 450px;
+    margin-top: 148px;
+  }
+  .banner-title1 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .banner-title2 {
+    font-size: 35px;
+    font-weight: 800;
+  }
+  .btn-sign,
+  .btn-go {
+    padding: 8px 15px;
+    gap: 5px;
+    font-size: 8px;
+  }
+  /* ------------------know more------------ */
+  .know-more-container {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .know-more-img img {
+    width: 300px;
+  }
+  .know-more-txt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .we-are-gamer {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .know-more-des,
+  .purpose {
+    width: 260px;
+    font-size: 9px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .know-more-btn {
+    padding: 10px 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 5px;
+    margin-left: 0;
+  }
+  .unless {
+    font-size: 16px;
+    font-style: normal;
+    line-height: 45px;
+  }
 }
