@@ -64,12 +64,12 @@
 .banner-container {
   display: flex;
   justify-content: space-around;
-  background: url("images/Group\ 14.png");
-  background-repeat: no-repeat;
   align-items: center;
   gap: 68px;
 }
 .banner-txt-container {
+  background: url("images/Group\ 14.png");
+  background-repeat: no-repeat;
   display: flex;
   padding: 200px 200px;
   width: 901px;
@@ -127,6 +127,8 @@
 }
 .banner-img-container img {
   height: 700px;
+  position: relative;
+  right: 100px;
   width: 100%;
   margin-right: auto;
 }
@@ -338,29 +340,48 @@
   right: 160px;
 }
 /* ------------------------------------------Icons------------------------------ */
-
-.first-row-container {
-  margin-top: 120px;
-  justify-content: center;
-  align-items: center;
+.icons-container {
   display: grid;
-  grid-gap: 10px;
   grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  margin-top: 120px;
+  height: 300px;
+  row-gap: 5px;
+  gap: 14px;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+#fourth-icon {
+  position: relative;
+  right: -140px;
+  top: -70px;
+}
+/* .first-row-container {
+  margin-top: 120px;
+
+  grid-gap: 10px;
 }
 .second-row-container {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 .icons-parent {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   text-align: center;
-  padding: 10px;
-  width: 240px;
-  height: 60px;
+  padding: 5px;
+  width: 230px;
+  height: 50px;
   border-radius: 50px;
   background: #fff;
   cursor: pointer;
@@ -455,6 +476,7 @@
     flex-direction: column;
     margin-top: 20px;
     flex-direction: column-reverse;
+    justify-content: center;
   }
   .banner-img-container {
     padding: 20px;
@@ -465,13 +487,14 @@
     align-items: center;
   }
   .banner-img-container img {
+    right: -10px;
     width: 300px;
-    height: 446px;
+    height: 356px;
     margin: auto;
   }
   .banner-txt-container {
-    padding: 100px 100px;
-    width: 450px;
+    padding: 50px 70px;
+    width: 200px;
     margin-top: 148px;
   }
   .banner-title1 {
@@ -479,8 +502,11 @@
     font-weight: 600;
   }
   .banner-title2 {
-    font-size: 35px;
+    font-size: 15px;
     font-weight: 800;
+  }
+  .banner-txt-container p {
+    font-size: 10px;
   }
   .btn-sign,
   .btn-go {
@@ -621,7 +647,43 @@
     margin-left: 100px;
   }
   /* -------------------------------------------icons-------------------------- */
-  .first-row-container {
+  .icons-container {
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .icons-parent {
+    gap: 5px;
+    padding: 10px;
+    width: 120px;
+    height: 30px;
+    border-radius: 50px;
+    background: #fff;
+    cursor: pointer;
+    transition: border 0.3s ease, color 0.3s ease;
+  }
+  .icons-container p {
+    color: #0b0223;
+    font-size: 7px;
+    font-weight: 200;
+  }
+  .icons-parent img {
+    width: 40px;
+    height: 40px;
+  }
+  /* ------------------------------footer--------------------------------------- */
+  .footer-anchors-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-social-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-terms-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
