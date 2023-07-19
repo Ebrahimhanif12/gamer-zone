@@ -273,8 +273,58 @@
   border: crimson solid;
   border-radius: 10px;
 }
+/* --------------------------play---------------------------- */
+.play-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+.play-img-container {
+  display: flex;
+}
+.play-txt-heading1 {
+  text-align: right;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.no-download {
+  color: #050111;
+  font-family: Work Sans;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: right;
+}
+.play-txt-des {
+  color: #534c64;
+  text-align: right;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  width: 353px;
+}
+.img-small {
+  width: 270px;
+  height: 300px;
+  position: relative;
+  top: 350px;
+  right: -170px;
+}
+.img-big {
+  width: 570px;
+  height: 570px;
+  flex-shrink: 0;
+}
 
-/* -----------------------Responsive for small----------------- */
+/* -----------------------Responsive for small----===============##########################------------- */
 /* ---------------nav--------------- */
 @media screen and (max-width: 576px) {
   .nav-container {
@@ -390,35 +440,35 @@
     font-style: normal;
     line-height: 45px;
   }
-}
-/* ---------------------online section ------------ */
-.online-container {
-  margin-top: 250px;
-}
-.online-img-container {
-  flex-direction: column;
-  align-items: center;
-}
-.online-txt-heading,
-.funny {
-  font-size: 24px;
-}
-.online-txt-des {
-  font-size: 10px;
-}
-.online-img {
-  margin: 5px;
-}
+  /* ---------------------online section ------------ */
+  .online-container {
+    margin-top: 250px;
+  }
+  .online-img-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .online-txt-heading,
+  .funny {
+    font-size: 24px;
+  }
+  .online-txt-des {
+    font-size: 10px;
+  }
+  .online-img {
+    margin: 5px;
+  }
 
-.play-icon {
-  font-size: 30px;
-  top: 40%; /* Adjust the position for better centering */
-  left: 40%;
-}
+  .play-icon {
+    font-size: 30px;
+    top: 40%; /* Adjust the position for better centering */
+    left: 40%;
+  }
 
-.play-icon .watch-now {
-  font-size: 12px;
-}
-.online-img p {
-  width: 240px;
+  .play-icon .watch-now {
+    font-size: 12px;
+  }
+  .online-img p {
+    width: 240px;
+  }
 }
