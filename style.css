@@ -323,6 +323,17 @@
   height: 570px;
   flex-shrink: 0;
 }
+/* -----------------------------------play online-------------------- */
+#play-container-online {
+  flex-direction: row-reverse;
+}
+.img-small-online {
+  width: 270px;
+  height: 300px;
+  position: relative;
+  top: 350px;
+  right: 160px;
+}
 
 /* -----------------------Responsive for small----===============##########################------------- */
 /* ---------------nav--------------- */
