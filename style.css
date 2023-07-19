@@ -223,7 +223,6 @@
   justify-content: center;
   width: 25%;
   margin: auto;
-  align-items: center;
   gap: 24px;
   text-align: left;
   background: #fdfbfb;
@@ -249,7 +248,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 40px;
-  color: white;
   opacity: 0;
   transition: opacity 0.3s ease;
   display: flex;
@@ -392,4 +390,35 @@
     font-style: normal;
     line-height: 45px;
   }
+}
+/* ---------------------online section ------------ */
+.online-container {
+  margin-top: 250px;
+}
+.online-img-container {
+  flex-direction: column;
+  align-items: center;
+}
+.online-txt-heading,
+.funny {
+  font-size: 24px;
+}
+.online-txt-des {
+  font-size: 10px;
+}
+.online-img {
+  margin: 5px;
+}
+
+.play-icon {
+  font-size: 30px;
+  top: 40%; /* Adjust the position for better centering */
+  left: 40%;
+}
+
+.play-icon .watch-now {
+  font-size: 12px;
+}
+.online-img p {
+  width: 240px;
 }
