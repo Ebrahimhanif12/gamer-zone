@@ -401,10 +401,19 @@
   display: flex;
   gap: 40px;
 }
-.footer-social-container>i {
+.footer-social-container > i {
   width: 40px;
   height: 40px;
 }
+.footer-terms-container {
+  display: flex;
+  gap: 60px;
+}
+.footer-terms-container p {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-last {
+  color: rgba(255, 255, 255, 0.6);
 }
 /* -----------------------Responsive for small----===============##########################------------- */
 /* ---------------nav--------------- */
